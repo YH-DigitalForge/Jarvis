@@ -1,0 +1,4 @@
+<speak>
+    <voice name="{voice_type}">{command}</voice>
+    <voice name="{voice_type}">라는 명령어는 아직 제가 배우지 못했어요...</voice>
+</speak>

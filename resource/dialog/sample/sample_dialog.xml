@@ -1,0 +1,5 @@
+<speak>
+    <voice name="MAN_DIALOG_BRIGHT">안녕하세요? 이것은 카카오 음성합성 에이피아이의 테스트 코드입니다.</voice>
+    <voice name="WOMAN_DIALOG_BRIGHT">카카오에서도 음성 합성 에이피아이를 제공하다니, 덕분에 개발하기 편해졌네요!.</voice>
+    <voice name="MAN_DIALOG_BRIGHT">그러게요. 카카오 상표를 배치해야한다는 점을 제외하면 좋은것같아요!.</voice>
+</speak>
