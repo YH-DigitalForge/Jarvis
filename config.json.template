@@ -1,0 +1,16 @@
+{
+  "prefix": "Jarvis",
+  "api": {
+    "kakao": {
+      "key": "YOUR_KAKAO_API_KEY"
+    }
+  },
+  "devices": {
+    "DEVICE_NAME": {
+      "id": 0,
+      "config": {
+
+      }
+    }
+  }
+}
