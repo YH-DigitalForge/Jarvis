@@ -1,3 +1,5 @@
+from ext.devices.device import Device
+from utils.config import Config
 from chronous.events import EventContext
 from core import jarvis_instance
 
@@ -25,4 +27,8 @@ async def onSetup(ec: EventContext, data: bytes):
     )
     print(recognized)
 
-jarvis_instance.run()
+# jarvis_instance.run()
+sample = Config(position="Supporter", speed=3)
+
+device1 = Device(name="LED")
+print(device1.name)
