@@ -3,9 +3,9 @@ from typing import List, Union
 
 
 class DialogFormatter:
-    def __init__(self, replacer: Union[str, List[str, str]]):
+    def __init__(self, replacer: Union[str, List[str]]):
         if isinstance(replacer, str):
-            self.replacers: List[str, str] = [replacer, replacer]
+            self.replacers: List[str] = [replacer, replacer]
         elif isinstance(replacer, list):
             self.replacers = replacer
 
