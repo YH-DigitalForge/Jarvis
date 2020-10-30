@@ -26,6 +26,7 @@ class JarvisEvent(BaseEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
 class PhaseEvent(JarvisEvent):
@@ -50,6 +51,7 @@ class PhaseEvent(JarvisEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
 class SetupEvent(PhaseEvent):
@@ -73,6 +75,7 @@ class SetupEvent(PhaseEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
 class InitEvent(PhaseEvent):
@@ -96,6 +99,7 @@ class InitEvent(PhaseEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
 class CloseEvent(PhaseEvent):
@@ -119,6 +123,7 @@ class CloseEvent(PhaseEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
 class VoiceEvent(JarvisEvent):
@@ -144,5 +149,29 @@ class VoiceEvent(JarvisEvent):
         Exception
             An exception or error occured during executing listener.
         """
+        pass
 
 
+class DeviceEvent(JarvisEvent):
+    def __init__(self, device):
+        super(DeviceEvent, self).__init__(name="device")
+        self._device = device
+
+    @staticmethod
+    async def listener(ec: EventContext, *args, **kwargs):
+        """Base listener structure
+
+        Parameters
+        -----------
+        ec: EventContext object containing Event information.
+            The coroutine to register as the local error handler.
+
+        Raises
+        -------
+        Exception
+            An exception or error occured during executing listener.
+        """
+
+    @property
+    def device(self):
+        return self._device
